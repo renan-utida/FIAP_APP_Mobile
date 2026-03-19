@@ -12,8 +12,8 @@ import { StatusBar } from "expo-status-bar";
 
 import { LoginHeader } from "./components/LoginHeader";
 import { LoginInput } from "./components/LoginInput";
-/*import { KeepSignedSwitch } from "./components/KeepSignedSwitch";
-import { LoginButton } from "./components/LoginButton";*/
+import { KeepSignedSwitch } from "./components/KeepSignedSwitch";
+// import { LoginButton } from "./components/LoginButton";
 
 function LoginScreen() {
   const insets = useSafeAreaInsets();
@@ -67,6 +67,11 @@ function LoginScreen() {
             toggleVisible={showPassword}
             onToggle={() => setShowPassword(!showPassword)}
             rightLabel="Esqueci minha senha"
+          />
+
+          <KeepSignedSwitch
+            value={keepSigned}
+            onValueChange={setKeepSigned}
           />
 
           {/* Rodapé */}
