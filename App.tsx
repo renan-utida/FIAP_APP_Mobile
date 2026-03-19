@@ -6,9 +6,9 @@ import {
   KeyboardAvoidingView,
   Platform,
   ScrollView,
+  StatusBar,
 } from "react-native";
 import { SafeAreaProvider, useSafeAreaInsets } from "react-native-safe-area-context";
-import { StatusBar } from "expo-status-bar";
 
 import { LoginHeader } from "./components/LoginHeader";
 import { LoginInput } from "./components/LoginInput";
@@ -27,7 +27,7 @@ function LoginScreen() {
       className="flex-1 bg-black"
       behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
-      <StatusBar style="light" />
+      <StatusBar barStyle="light-content" backgroundColor="#ED145B"/>
 
       {/* Barra de status */}
       <View className="bg-[#ED145B] w-full" style={{ height: insets.top }} />
