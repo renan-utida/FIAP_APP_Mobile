@@ -113,7 +113,7 @@ npm start
 
 ![WhatsApp Image 2026-03-19 at 16 30 46](https://github.com/user-attachments/assets/a40727c9-4a9f-43c8-8b48-f6535e2015ba)
 
-## Integrantes Icers— 3ESPW
+## Integrantes Icers — 3ESPW
 
 | Nome | RM |
 |------|----|
