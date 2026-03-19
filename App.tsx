@@ -11,8 +11,8 @@ import { SafeAreaProvider, useSafeAreaInsets } from "react-native-safe-area-cont
 import { StatusBar } from "expo-status-bar";
 
 import { LoginHeader } from "./components/LoginHeader";
-/*import { LoginInput } from "./components/LoginInput";
-import { KeepSignedSwitch } from "./components/KeepSignedSwitch";
+import { LoginInput } from "./components/LoginInput";
+/*import { KeepSignedSwitch } from "./components/KeepSignedSwitch";
 import { LoginButton } from "./components/LoginButton";*/
 
 function LoginScreen() {
@@ -48,7 +48,26 @@ function LoginScreen() {
             Acesse com suas credenciais institucionais
           </Text>
 
-          
+          <LoginInput
+            label="RM (Registro do Aluno)"
+            placeholder="Ex: 555555"
+            value={rm}
+            onChangeText={setRm}
+            keyboardType="numeric"
+            maxLength={10}
+          />
+
+          <LoginInput
+            label="Senha"
+            placeholder="Digite sua senha"
+            value={password}
+            onChangeText={setPassword}
+            secureTextEntry
+            showToggle
+            toggleVisible={showPassword}
+            onToggle={() => setShowPassword(!showPassword)}
+            rightLabel="Esqueci minha senha"
+          />
 
           {/* Rodapé */}
           <Text className="text-zinc-600 text-xs text-center">
